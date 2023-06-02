@@ -17,10 +17,7 @@
 <script>
     const checkNumber=()=>{
     var number = scoreInput.value;
-    if (number ==""){
-        display.innerHTML = "Kindly Input a number betwen 1 & 100"
-    }
-    else if (number%3==0){
+    if (number%3==0){
         display.innerHTML = "PDC"
         console.log("PDC")
     }
@@ -28,15 +25,10 @@
         display.innerHTML = "NID"
         console.log("NID")
     }
-    else if (number%3==0 || score%5==0){
+    else if (number%3==0 && score%5==0){
         display.innerHTML = "PDC NID"
         console.log("NID")
     }
-    else if (number >100)
-        display.innerHTML = ("Input a value that is below below or equals to 100")
-    else if (typeof number)
-        display.innerHTML = ("You can only input a number between 1 & 100")
-
 }
     
 
