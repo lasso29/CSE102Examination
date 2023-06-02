@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./jsexam.css">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <div class="container">
+            <h1>MY GRADING SYSTEM</h1>
+            <input type="text" placeholder="Input your score" id="scoreInput"> <br> <br>
+            <button onclick="check ()">CHECK YOUR RESULT</button>  <br> <br>
+            <h1><div id="disp"></div></h1>
+        </div>
+    </center>
+    
+
+    <script>
+        function check (){
+        var userInput = scoreInput.value
+        if (userInput <0)
+        disp.innerHTML = "Invalid"
+        else if (userInput == ""){
+        disp.innerHTML = "Kindly enter your score"
+        }
+        else if (userInput >=0 && userInput <=59){
+        disp.innerHTML = "F"
+        }
+        else if (userInput >=60 && userInput <=62)
+        disp.innerHTML = "D-"
+        else if (userInput >=63 && userInput <=66)
+        disp.innerHTML = "D"
+        else if (userInput >=67 && userInput <=69)
+        disp.innerHTML = "D+"
+        else if (userInput >=70 && userInput <=72)
+        disp.innerHTML = "C-"
+        else if (userInput >=73 && userInput <=76)
+        disp.innerHTML = "C"
+        else if (userInput >=77 && userInput <=79)
+        disp.innerHTML = "C+"
+        else if (userInput >=80 && userInput <=82)
+        disp.innerHTML = "B-"
+        else if (userInput >=83 && userInput <=86)
+        disp.innerHTML = "B"
+        else if (userInput >=87 && userInput <=89)
+        disp.innerHTML = "B+"
+        else if (userInput >=90 && userInput <=92)
+        disp.innerHTML = "A-"
+        else if (userInput >=93 && userInput <=96)
+        disp.innerHTML = "A"
+        else if (userInput >=97 && userInput <=100)
+        disp.innerHTML = "A+"
+        else if (userInput >100)
+        disp.innerHTML = ("Invalid")
+        else if (typeof userInput)
+        disp.innerHTML = ("Invalid")
+
+        
+       
+
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <h1>Grade Checker</h1>
+    <input type="text" placeholder="Enter a Number" id="scoreInput">
+    <button class="" onclick="checkNumber()">Check Number</button>
+    <h1><div id="display"></div></h1>
+    </center>
+
+<script>
+    const checkNumber=()=>{
+    var number = scoreInput.value;
+    if (number ==""){
+        display.innerHTML = "Kindly Input a number betwen 1 & 100"
+    }
+    else if (number%3==0){
+        display.innerHTML = "PDC"
+        console.log("PDC")
+    }
+    else if (number%5==0){
+        display.innerHTML = "NID"
+        console.log("NID")
+    }
+    else if (number%3==0 || score%5==0){
+        display.innerHTML = "PDC NID"
+        console.log("NID")
+    }
+    else if (number >100)
+        display.innerHTML = ("Input a value that is below below or equals to 100")
+    else if (typeof number)
+        display.innerHTML = ("You can only input a number between 1 & 100")
+
+}
+    
+
+</script>
+</body>
+</html>
